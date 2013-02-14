@@ -92,7 +92,97 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{	
+	background: #eaeaea;
+}
 
+header {
+	width: 100%;
+	height: 475px;
+	background: #151515;
+}
+header #top {
+	height: 100px;
+	width: 1000px;
+	margin: auto;	
+}
+
+header #logo{
+	color: #FFF;
+	float:left;
+	width: 700px;
+	font-size: 120px;
+	padding-top: 250px;
+}
+
+header #logo span{
+	color: #4c4c4c;
+}
+
+header ul {
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+	float: left;
+	width: 300px;
+	font-size: 45px;
+	padding-top: 200px;
+}
+
+header ul li {
+	list-style: none;
+} 
+
+header ul li:nth-child(1) {
+	color: #e62799;
+}
+
+header ul li:nth-child(2) {
+	color: #00aed9;
+}
+
+header ul li:nth-child(3) {
+	color: #00c376;
+}
+section {
+	background: #2d2d2d;
+	width: 100%;
+	height: 115px;
+}
+
+section #slogan {
+	width: 1000px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+section #design {
+	color: #CCCCCC;
+}
+
+section #business {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+footer{
+	width: 1000px;
+	background: #eaeaea;
+	margin: auto;
+	color: #333333;
+	padding-top: 25px; 
+}
+
+footer .element{
+	float: left;
+	width: 250px;
+	font-weight: bold;
+}
+
+footer .element span{
+	padding-top: 16px;
+	font-weight: normal;
+}
 
 
 
