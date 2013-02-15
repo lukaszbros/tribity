@@ -94,25 +94,43 @@ textarea {
    ========================================================================== */
 body{	
 	background: #eaeaea;
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 header {
 	width: 100%;
-	height: 475px;
+	height: 425px;
 	background: #151515;
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3Nzc3NzciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTUxNTE1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(top, ellipse cover, #2b2b2b 0%, #151515 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, top center, 0px, center center, 100%, color-stop(0%,#2b2b2b), color-stop(100%,#151515)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(top, ellipse cover, #2b2b2b 0%,#151515 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(top, ellipse cover, #2b2b2b 0%,#151515 100%); /* Opera 12+ */
+background: -ms-radial-gradient(top, ellipse cover, #2b2b2b 0%,#151515 100%); /* IE10+ */
+background: radial-gradient(ellipse at top, #2b2b2b 0%,#151515 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#151515',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
 }
+
+header #top-bar {
+	height: 10px;
+	background: #2d2d2d;
+}
+
 header #top {
 	height: 100px;
-	width: 1000px;
-	margin: auto;	
+	padding: 20px;	
 }
 
 header #logo{
-	color: #FFF;
+	color: #ffffff;
 	float:left;
-	width: 700px;
-	font-size: 120px;
-	padding-top: 250px;
+	width: 70%;
+	font-size: 8.2em;
+	padding-top: 190px;
 }
 
 header #logo span{
@@ -123,10 +141,11 @@ header ul {
 	list-style: none; 
 	padding: 0; 
 	margin: 0;
-	float: left;
-	width: 300px;
-	font-size: 45px;
-	padding-top: 200px;
+	float: right;
+	width: 30%;
+	font-size: 2.5em;
+	padding-top: 190px;
+	line-height: 1.2;
 }
 
 header ul li {
@@ -146,14 +165,12 @@ header ul li:nth-child(3) {
 }
 section {
 	background: #2d2d2d;
-	width: 100%;
-	height: 115px;
 }
 
 section #slogan {
-	width: 1000px;
-	margin: auto;
-	padding-top: 30px;
+	padding-top: 25px;
+	font-size: 1.4em;
+	padding: 27px 20px 27px 20px;	
 }
 
 section #design {
@@ -166,37 +183,143 @@ section #business {
 }
 
 footer{
-	width: 1000px;
+	padding: 20px;	
 	background: #eaeaea;
-	margin: auto;
 	color: #333333;
 	padding-top: 25px; 
 }
 
+footer a{
+	color: #333333;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
 footer .element{
 	float: left;
-	width: 250px;
-	font-weight: bold;
+	width: 25%;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 1;
+	margin-bottom: 15px;
 }
 
 footer .element span{
 	padding-top: 16px;
-	font-weight: normal;
+	font-weight: 400;
+	font-size: 20px;
+	display: block;
+}
+
+footer #twitter {
+	float: left;
+	width: 25px;
+	height: 26px;
+	display: block;
+	background:url("../img/tribity_assets.png") 0px 0px no-repeat;
+}
+
+footer #twitter:hover {
+	background:url("../img/tribity_assets.png") 0px -39px no-repeat; 
+	text-decoration: none;
+}
+
+footer #facebook {
+	float: left;
+	margin-left: 10px;
+	width: 25px;
+	height: 26px;
+	display: block;
+	background:url("../img/tribity_assets.png") -33px 0px no-repeat;
+}
+
+footer #facebook:hover {
+	background:url("../img/tribity_assets.png") -33px -39px no-repeat; 
+	text-decoration: none;
+}
+
+footer #dribbble {
+	float: left;	
+	margin-left: 10px;
+	width: 25px;
+	height: 26px;
+	display: block;
+	background:url("../img/tribity_assets.png") -66px 0px no-repeat;
+}
+
+footer #dribbble:hover {
+	background:url("../img/tribity_assets.png") -66px -39px no-repeat; 
+	text-decoration: none;
+}
+
+#bottom-bar {
+	width: 100%;
+	height: 10px;
+	background: #2d2d2d;
+	position: fixed;
+	bottom: 0px;
 }
 
 
+@media screen and (min-width: 1000px){
+	header #top {
+		width: 1000px;
+		margin: auto;
+	}
+	
+	section #slogan {
+		width: 1000px;
+		margin: auto;
+	}
+	
+	footer{
+		width: 1000px;
+		margin: auto;
+	}
+}
 
+@media screen and (max-width: 1000px){
+	header {
+		height: 350px;
+	}
+	
+	header #logo{
+		padding-top: 120px;
+	}
+	
+	header ul {
+		padding-top: 0px;
+	}
+}
 
+@media screen and (max-width: 680px){
+	header #logo{		
+		font-size: 5.2em;
+		padding-top: 200px;
+	}	
+	
+	footer .element{
+		width: 200px;
+	}
+}
 
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 420px){
+	header {
+		height: 300px;
+	}
+	
+	header #logo{		
+		font-size: 3.8em;
+		padding-top: 30px;
+	}
+		
+	header ul {		
+		width: auto;
+	}
+}
 
 
 /* ==========================================================================
